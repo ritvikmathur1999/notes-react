@@ -1,13 +1,189 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  /* text-align: left; */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* .heading{
+  padding-left: 10px;
+} */
+
+.header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-top: 9px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.header-tags {
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.container {
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100vh;
+  /* padding-right: 1px;
+  padding-left: 1px; */
+  /* text-align: left; */
+}
+
+.note-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* grid-template-columns:  auto auto auto auto; */
+}
+
+.card-template {
+  background-color: rgb(241, 241, 70);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  margin-bottom: auto;
+  /* min-width: 220px; */
+}
+
+.note-text {
+  font-size: small;
+  /* for auto white space removal */
+  white-space: pre-wrap;
+}
+
+.card-template.addnote {
+  background-color: rgb(70, 182, 182);
+}
+
+.addNote-text {
+  color: white;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: rgb(70, 182, 182);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+#note-footer {
+  color: rgb(66, 66, 66);
+}
+.toggle-button {
+  /* background-color: rgb(207, 207, 207); */
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.toggle-button:hover {
+  cursor: pointer;
+}
+
+.save {
+  font-size: 20px;
+}
+
+.save:hover {
+  cursor: pointer;
+}
+
+::placeholder {
+  color: white;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: xx-small;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 10px;
+}
+
+.footer.date {
+  color: black;
+}
+/* .date-footer{
+  text-align: right;
+}
+
+.delete-button{
+  text-align: right;
+} */
+
+.note-text-input {
+  border: 0cm;
+  background: transparent;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.delete-icon {
+  color: black;
+}
+
+.delete-icon:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.search {
+  display: flex;
+  background-color: rgb(207, 207, 207);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  padding: 2px;
+}
+
+.search-input:focus {
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
